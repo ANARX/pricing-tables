@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "ArimoRegular";
+    src: url("../font/Arimo/ArimoRegular.eot");
+    src: url("../font/Arimo/ArimoRegular.eot?#iefix") format("embedded-opentype"),
+    url("../font/Arimo/ArimoRegular.woff") format("woff"),
+    url("../font/Arimo/ArimoRegular.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: #3A4965;
+    font-family: ArimoRegular, sans-serif;
+}
+
+.container {
+    padding: 50px;
+    width: 100em;
+}
+
+
+.table1_container, .table2_container {
+    background-color: #D7D7D7;
+    width: 80%;
+}
+
+.table1, .table2 {
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+td, th, button {
+    text-transform: uppercase;
+    color: #484848;
+}
+
+.table1 th, .table1 td {
+    width: 320px;
+    height: 72px;
+}
+
+.table2 th {
+    font-size: 20px;
+}
+
+.fas {
+    font-size: 24px;
+    margin: 10px 12px;
+    color: #848484;
+}
+
+.buttons {
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: linear-gradient(transparent, #00000000, #00000050);
+    outline: none;
+    overflow: hidden;
+    
+}
+
+.button-text {
+    position: relative;
+    top: 4px
+}
+
+.button1 {
+    height: 42px;
+    width: 192px;
+    transition-duration: 0.5s;
+}
+
+.button2 {
+    height: 37px;
+    width: 144px;
+    transition-duration: 0.5s;
+}
+
+.button1:hover, .button2:hover {
+    color: #6495ED;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.green {
+    background-color: #89c331;
+}
+
+.red {
+    background-color: #f04a56;
+}
+
+.cyan {
+    background-color: #20807c;
+}
+
+.black {
+    background-color: #484848;
+    box-shadow: 0 7px #404040;
+}
+
+.black:active {
+    box-shadow: 0 7px #00000050;
+    color: #00000080;
+    background-color: #00000050;
+    transition: 0.1ms .1s ease-in all;
+}
+
+.buttons.green {
+    box-shadow: 0 7px #79b027;
+}
+
+.buttons.green:active {
+    box-shadow: 0 7px #00000050;
+    color: #00000080;
+    background-color: #00000050;
+    transition: 0.1ms .1s ease-in all;
+}
+
+.buttons.red {
+    box-shadow: 0 7px #df3a46;
+}
+
+.buttons.red:active {
+    box-shadow: 0 7px #00000050;
+    color: #00000080;
+    background-color: #00000050;
+    transition: 0.1ms .1s ease-in all;
+}
+
+.buttons.cyan {
+    box-shadow: 0 7px #16736F;
+}
+
+.buttons.cyan:active {
+    box-shadow: 0 7px #00000050;
+    color: #00000080;
+    background-color: #00000050;
+    transition: 0.1ms .1s ease-in all;
+}
+
+.opt {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+th:first-child {
+    background-color: #FFFFFF;
+}
+
+.table1 th:first-child {
+    font-size: 18px;
+}
+
+.table1 th:first-child p:last-child {
+    font-size: 30px;
+}
+
+.table1 th:nth-of-type(3) .opt {
+    font-size: 30px;
+}
+
+.table2 th:first-child p:first-child {
+    font-size: 14px;
+}
+
+.table2 td:first-child {
+    line-height: 40px;
+}
+
+.table1 .price {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.table2 .price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #F2F2F2;
+}
+
+.table1 .price sup {
+    font-size: 24px;
+    position: relative;
+    bottom: 0.22em;
+}
+
+.table2 .price sup {
+    font-size: .5em;
+}
+
+.table1 .price:after {
+    position: relative;
+    content: "PER MONTH";
+    color: #00000090;
+    right: 27px;
+    bottom: 5px;
+}
+
+.table2 .price:after {
+    position: relative;
+    content: "PER MONTH";
+    bottom: 3px;
+    left: 3px;
+}
+
+.table1 .price:after {
+    font-size: 18px;
+}
+
+.table2 .price:after {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.table1 tr:nth-child(2) {
+    height: 86px;
+}
+
+.table1 tr:last-child {
+    height: 110px;
+}
+
+.table2 tr:first-child {
+    height: 113px;
+}
+
+.table2 tr:not(:first-child) {
+    height: 166px;
+}
+
+.table2 th:not(:first-child), .table2 td:not(:first-child) {
+    width: 157px;
+}
+
+.table2 th:first-child, .table2 td:first-child {
+    width: 198px;
+}
+
+.table1 tr:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.table1 tr:nth-child(2n+3),
+.table2 th:nth-of-type(2n+3),
+.table2 td:nth-of-type(2n+3) {
+    background-color: #F2F2F2;
+}
+
+.table1 tr:nth-child(2n+4),
+.table2 th:nth-of-type(2n),
+.table2 td:nth-of-type(2n) {
+    background-color: #E3E3E3;
+}
+
+
